@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margins */
+}
+
+.bgImg {
+    background-image: url('../assets/background-gradient-lights.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vh;
+}
+
+.contactText {
+    font-weight: bold;
+    font-size: x-large;
+    margin: 0px 0px 0px 10px;
+}
+
+.headerSizes {
+    font-weight: bold;
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+li.margins {
+    margin: 10px 0px 0px 0px;
+}
+
+.imageMargins {
+    margin: 0 auto;
+    height: 18%;
+    width: 18%;
+}
+
+.alert {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .navbar-brand {
+        padding: 0 0.7em;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 1em 0;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin: 0 1em;
+    }
+}
+
+.navbar .navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: cyan;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: cyan;
+}
+
+
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: cyan;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all .5s;
+}
+
+.navbar .navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.imageMargins:hover {
+    height: 20%;
+    width: 20%;
+    transition: all .3s;
+}
+
+.home__social-icon {
+    width: max-content;
+    margin: 30px 5px 5px 20px;
+    font-size: 3.0rem;
+    color: white;
+}
+
+.home__social-icon:hover {
+    color: cyan;
+}
+
+
+
+.banner {
+    background-color: #f8d49d;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.row {
+    align-items: center;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px #7c7c7c;
+}
+
+.btn {
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px rgba(105, 73, 73, 0.15);
+}
+
+@media screen and (max-width: 567px) {
+    .banner {
+        text-align: center;
+    }
+}
+
+.om:hover {
+    color: red;
+}
+
+.responsive {
+    max-width: 80%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#description {
+    font-style: oblique;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
