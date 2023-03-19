@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Om Alve</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left-section">
+            <div>&#60;<span>Om Alve</span>/&#62;</div>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburger">&#9776;</label>
+        <ul class="right-section">
+            <li class="nav-items"><a href="#intro">Home</a></li>
+            <li class="nav-items"><a href="#techstack">Tools And Skills</a></li>
+            <li class="nav-items"><a href="#projects">Projects</a></li>
+            <li class="nav-items"><a href="">Contact Me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="intro" id="intro">
+            <div class="intro-text">
+                <div class="info-1">Hi I'm Om</div>
+                <div class="info-2">A student at VIT Mumbai</div>
+                <div class="info-3">
+                    I am currently pursuing my Bachelors of Technology in Information technology. I enjoy learning new
+                    technologies and implementing them to solve real-world problems. I can be relied upon to help your
+                    company achieve its goals by providing sustainable and scalable solutions.
+                </div>
+            </div>
+            <div class="intro-image"><img src="assets/programmer.svg" alt=""></div>
+        </section>
+        <section class="techstack" id="techstack">
+            <div class="heading">My Techstack</div>
+            <div class="techstack-grid">
+                <div class="stack-items"><img src="assets/bxl-c-plus-plus.svg" alt="">
+                    <div class="label">C++</div>
+                </div>
+                <div class="stack-items"><img src="assets/bxl-css3.svg" alt="">
+                    <div class="label">CSS 3</div>
+                </div>
+                <div class="stack-items"><img src="assets/bxl-flask.svg" alt="">
+                    <div class="label">Flask</div>
+                </div>
+                <div class="stack-items"><img src="assets/bxl-html5.svg" alt="">
+                    <div class="label">HTML5</div>
+                </div>
+                <div class="stack-items"><img src="assets/bxl-java.svg" alt="">
+                    <div class="label">Java</div>
+                </div>
+                <div class="stack-items"><img src="assets/bxl-javascript.svg" alt="">
+                    <div class="label">JavaScript</div>
+                </div>
+                <div class="stack-items"><img src="assets/bxl-python.svg" alt="">
+                    <div class="label">Python</div>
+                </div>
+
+                <div class="stack-items"><img src="assets/bxl-git.svg" alt="">
+                    <div class="label">Git</div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="heading">My Projects</div>
+            <div class="project">
+                <div class="project-title">
+                    Filters
+                </div>
+                <div class="project-info">
+                    <div class="project-text">
+                        <div class="project-description">
+                            The Filter project is a program that applies various filters to bitmap images (BMP) using
+                            command-line arguments. The program allows the user to apply five different filters:
+                            Grayscale,
+                            Sepia, Edge Detection, Blur, and Reflection. The program can be executed using the command
+                            "./filter -(initial letter of filter) Input_image_name.bmp Output_image_name.bmp".
+
+                            The program validates the input filter flag and ensures that only one filter is applied at a
+                            time. It also checks if the user has entered the correct number of arguments. The program
+                            then
+                            reads the input BMP file, validates its format, and stores the image's dimensions and pixel
+                            values in memory. After that, it applies the selected filter to the image and writes the
+                            modified pixel values to the output BMP file.
+                        </div>
+                        <a href="https://github.com/Om-Alve/Filters"><button class="project-link">Source
+                                Code</button></a>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/FiltersDemo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    Ocean Trouble
+                </div>
+                <div class="project-info">
+                    <div class="project-image">
+                        <img src="assets/oceanTrouble.png" alt="">
+                    </div>
+                    <div class="project-text">
+
+                        <div class="project-description">
+                            Ocean Trouble is a fun and exciting game made with Scratch. In this game, you are a scuba
+                            diver
+                            who is trying to navigate through the ocean while avoiding jellyfish. The game is simple to
+                            play
+                            and requires only the use of the arrow keys.
+
+                            The goal of the game is to keep the scuba diver safe by avoiding the jellyfishes that come
+                            in
+                            your path. To do this, you must move the diver up, down, left, and right using the arrow
+                            keys.
+                            You will need to be quick and nimble to avoid the jellyfish, which will move at varying
+                            speeds
+                        </div>
+                        <a href="https://scratch.mit.edu/projects/724604220/"><button class="project-link">Source
+                                Code</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    Amadeus
+                </div>
+                <div class="project-info">
+                    <div class="project-text">
+                        <div class="project-description">
+                            Amadeus is a multi-functional discord bot created with Python and discord.py library. It was
+                            inspired by the shut down of the music bot 'rhythm' and developed by me using the knowledge
+                            gained from CS50. It has features like translation, QRcode generation, and anime search.
+                            Amadeus
+                            can send welcome messages to new members and respond to both normal messages and commands.
+                            It
+                            uses Daki bot hosting and its source code is on GitHub. The bot code is divided into
+                            different
+                            files with specific functions. The chatbot feature is limited to avoid interfering with user
+                            conversations, but I plan to make it AI-based in the future. Amadeus is a versatile bot that
+                            can
+                            enhance the discord experience for users.
+                        </div>
+                        <a href="https://github.com/Om-Alve/Amadeus"><button class="project-link">Source
+                                Code</button></a>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/Amadeus.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    Chatroom
+                </div>
+                <div class="project-info">
+                    <div class="project-image">
+                        <img src="assets/Chatroom.png" alt="">
+                    </div>
+                    <div class="project-text">
+                        <div class="project-description">
+                            This chatroom app is designed to allow users to easily connect with each other and engage in
+                            real-time conversations. It is built using Flask and Flask-SocketIO, which allows for fast
+                            and
+                            efficient communication between users.
+
+                            Upon launching the app, users can create a new chat room with a randomly generated code or
+                            enter
+                            an existing one by providing the code. Once inside the chat room, users can send messages to
+                            the
+                            group and view messages sent by other users in real-time. This creates an immersive and
+                            engaging
+                            environment that encourages users to actively participate in the conversation.
+
+
+                        </div>
+                        <a href="https://github.com/Om-Alve/Chatroom"><button class="project-link">Source
+                                Code</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
