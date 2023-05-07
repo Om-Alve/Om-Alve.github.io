@@ -1,11 +1,27 @@
-body{
-    background-color: rgb(22,22,37);
+body {
+    background-color: rgb(22, 22, 37);
     padding-top: 60px;
     padding-bottom: 100px;
     padding-left: 0;
     padding-right: 0;
     color: white;
     overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+  }
+
+  html {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    
+  }
+  
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0; 
 }
 
 section{
@@ -16,135 +32,82 @@ section{
 }
 
 /* Navbar */
-
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    align-items: center;
+.navbar-custom{
     background-color: rgb(9,28,52);
-    height: 60px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 100;
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white;
 }
 
-.left-section{
-    display: flex;
-    width: 80px;
-    margin-left: 20px;
-}
-.right-section{
-    display:flex;
-    flex:6;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;    
+@media only screen and (min-width: 992px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .navbar-brand {
+        padding: 0 0.7em;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 1em 0;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin: 0 1em;
+    }
 }
 
-.left-section div{
-    font-size: 18px;
-    font-weight: 500;
-    font-family: 'Roboto',arial;
-    transition: color 0.15s;
-    white-space: nowrap;
+.navbar .navbar-nav .nav-link {
+    position: relative;
 }
 
-.left-section:hover div span{
+.navbar .navbar-nav .nav-link:hover {
     color: cyan;
 }
 
-.nav-items{
-    text-decoration: none;
-    list-style: none;
-    padding: 0 20px;
+.navbar .navbar-nav .nav-link.active {
+    color: cyan;
 }
 
-.nav-items a{
-    color: white;
-    transition: border-bottom-width 1s;
-    border-bottom: 1px;
-    font-size: 18px;
-    border-bottom-width: 0;
+
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: cyan;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all .5s;
 }
 
-.nav-items a::after{
-    display:block;
-    content: '';
-    border-bottom: solid 3px cyan;  
-    transform: scaleX(0);  
-    transition: transform 250ms ease-in-out;
+.navbar .navbar-nav .nav-link.active::after {
+    width: 100%;
 }
 
-.nav-items a:hover:after { transform: scaleX(1); }
-
-.hamburger{
-    font-size: larger;
-    margin-right:80px;
-    line-height: 55px;
-    display: none;
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
 }
 
-#check{
-    display: none;
-}
-
-@media (max-width:952px) {
-    .hamburger{
-        display: flex;
-        justify-content: flex-end;
-        margin: 0;
-        flex:1;
-        margin-right: 50px;
-    }
-    .hamburger label{
-        display: block;
-    }
-    .right-section{
-        position: fixed;
-        top:40px;
-        display: flex;
-        height: 100vh;
-        width:100vw;
-        transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
-        text-align: center;
-        background-color: black;
-        transition: all 0.5s;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex: 1;
-    }
-    .nav-items{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 40px;
-
-    }
-    input:checked ~ ul{
-        transform: none;
-    }
-}
 
 /* Intro */
-
-.intro{
+.intro {
     display: flex;
     color: white;
     padding-top: 50px;
-    padding-left: 50px;
     height: 100%;
-    width: 80vw;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
-    padding-right: 0;
-}
+    box-sizing: border-box;
+  }
+  
+  /* Remaining CSS code... */
+  
 
 @media (max-width: 1000px) {
     .intro{
@@ -205,7 +168,7 @@ section{
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    width: 100vw;
+    width: 100%;
 }
 
 .heading{
