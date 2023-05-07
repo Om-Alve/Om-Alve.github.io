@@ -41,6 +41,7 @@ section{
   color: white;
 }
 
+
 @media only screen and (min-width: 992px) {
     .navbar {
         padding: 0;
