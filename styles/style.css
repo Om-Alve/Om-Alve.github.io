@@ -39,6 +39,7 @@ section{
 .navbar .navbar-brand,
 .navbar .nav-link {
   color: white;
+  cursor: pointer;
 }
 
 
